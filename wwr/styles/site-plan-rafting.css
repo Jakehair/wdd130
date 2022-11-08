@@ -17,12 +17,12 @@ Fonts are separated by a & */
   --paragraph-font: "Shadows Into Light", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: #9BC1A9; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #F4F1BB; /* paragraph text on a colored background */ 
-  --paragraph-background-color: Black  ;
-  --nav-link-color: #396E94;
+  --headline-color-on-white: #5D576B;  /* headlines on a white background */
+  --headline-color-on-color: #9BC1A9; /* headlines on a colored background */
+  --paragraph-color-on-white: #5D576B; /* paragraph text on a white background */
+  --paragraph-color-on-color: #F4F1BB; /* paragraph text on a colored background */
+  --paragraph-background-color: Black;
+  --nav-link-color: #5D576B;
   --nav-background-color: #F4F1BB;
   --nav-hover-link-color: #ED6A5A;
   --nav-hover-background-color: #396E94;
