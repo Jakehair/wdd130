@@ -249,11 +249,14 @@ nav {
     align-items: center;
 }
 #faq-title {
+    color:#ED6A5A;
+    font-size: larger;
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: space-around;
     margin: 0 auto;
+    margin-top: 45px;
     padding: 30px;
 }
 
