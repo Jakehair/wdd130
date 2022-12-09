@@ -94,7 +94,12 @@ nav a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-row: 4/5;
     border: 5px solid #373f51;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     font-size: xx-large;
+    background-color: #008dd5;
+    color:#373f51;
+    margin-bottom: 50px;
 }
 .social {
     justify-content: space-around;
@@ -109,11 +114,6 @@ nav a {
 #hero-msg a{
     text-decoration: none;
     color: #03cea4;
-}
-footer {
-    color:#373f51;
-    background-color: #008dd5;
-    margin-bottom: 50px;
 }
 #resources a{
     text-decoration: none;
