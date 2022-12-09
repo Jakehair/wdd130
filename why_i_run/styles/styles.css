@@ -61,6 +61,7 @@ nav a {
     padding: 55px;
     text-decoration: none;
     font-size: x-large;
+    color: #008dd5;
 }
 #hero-msg {
     grid-column: 2/3;
