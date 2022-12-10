@@ -22,6 +22,8 @@ header {
 #home-grid {
     grid-row: 3/4;
     background-color: #373f51;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 nav {
     display: flex;
@@ -101,6 +103,7 @@ nav a {
     color:#373f51;
     margin-bottom: 50px;
 }
+
 .social {
     justify-content: space-around;
     text-align: center;
@@ -161,3 +164,67 @@ body, html {
     grid-column: 1/3;
     grid-row-start: 1;
   }
+
+#why-i-run-content {
+    display: grid;
+    max-width: 1600px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px auto 150px;
+}
+#why-i-run-grid {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 175px auto auto auto auto;
+    margin-top: 25px;
+    background-color: #373f51;
+}
+#page-title {
+    grid-column: 1/6;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.left-title {
+    grid-column: 1/4;
+    text-align: center;
+    font-size: xx-large;
+}
+.right-title {
+    grid-column: 3/6;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#para-1, #para-2, #para-3, #para-4 {
+    font-size: smaller;
+    font-weight: 100;
+}
+#first-row {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#para-1 {
+    grid-column: 1/2;
+}
+#img-1 {
+    grid-column: 2/3;
+}
+#why-footer-grid {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 5px solid #373f51;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: xx-large;
+    background-color: #008dd5;
+    color:#373f51;
+    margin-bottom: 50px;
+    grid-row: 3/4;
+}
+
