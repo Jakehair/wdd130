@@ -111,7 +111,7 @@ nav a {
     grid-column: 2/3;
 }
 #resources a:hover, #hero-msg a:hover{
-    color:#f2b880;
+    color:#03cea4;
     text-decoration: underline;
 }
 #hero-msg a{
@@ -120,7 +120,7 @@ nav a {
 }
 #resources a{
     text-decoration: none;
-    color: #373f51;
+    color: #f2b880;
 }
 body, html {
     height: 100%;
@@ -166,53 +166,81 @@ body, html {
   }
 
 #why-i-run-content {
-    display: grid;
     max-width: 1600px;
     margin: 0 auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px auto 150px;
 }
 #why-i-run-grid {
     justify-items: center;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 175px auto auto auto auto;
+    grid-template-areas:
+      "header header header header header"
+      "text1 text1 text1 img1 img1"
+      "img2 img2 text2 text2 text2"
+      "text3 text3 text3 img3 img3"
+      "text4 text4 text4 text4 text4"
+      "img4 img4 img4 img4 img4";
+      
     margin-top: 25px;
-    background-color: #373f51;
+    background-color: #008dd5;
+    color:#373f51;
+    tab-size: 2;
+    padding: 45px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    place-items: center;
+    row-gap: 40px;
 }
+
 #page-title {
     grid-column: 1/6;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
 }
-.left-title {
-    grid-column: 1/4;
-    text-align: center;
-    font-size: xx-large;
-}
-.right-title {
-    grid-column: 3/6;
-    text-align: center;
-    font-size: xx-large;
-}
 
-#para-1, #para-2, #para-3, #para-4 {
+p {
     font-size: smaller;
     font-weight: 100;
 }
-#first-row {
-    grid-row: 2/3;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+#fifty-twenty {
+    grid-area: text1;
+    padding: 40px;
 }
-#para-1 {
-    grid-column: 1/2;
+#fifty-twenty-title {
+    text-align: left;
+    justify-items: left;
 }
-#img-1 {
-    grid-column: 2/3;
+#fifty-twenty-img {
+    grid-area: img1;
+    max-width: 100%;
+    padding: 40px;
+}
+#first-half-img {
+    grid-area: img2;
+    max-width: 100%;
+    padding: 40px;
+}
+#first-half-race {
+    grid-area: text2;
+    padding: 40px;
+}
+#bryce-race {
+    grid-area: text3;
+    padding: 40px;
+}
+#bryce-race-img {
+    grid-area: img3;
+    max-width: 100%;
+    padding: 40px;
+}
+#why-i-run-text {
+    grid-area: text4;
+    padding: 40px;
+}
+#why-i-run-img {
+    grid-area: img4;
+    max-width: 100%;
+    padding: 40px;
 }
 #why-footer-grid {
     justify-items: center;
@@ -222,8 +250,8 @@ body, html {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: xx-large;
-    background-color: #008dd5;
-    color:#373f51;
+    background-color: #373f51;
+    color: #008dd5;
     margin-bottom: 50px;
     grid-row: 3/4;
 }
