@@ -53,8 +53,6 @@ nav a:hover {
     width: 100%;
 }
 #hero {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px;
 }
 #hero-box {
@@ -165,7 +163,26 @@ body, html {
     grid-column: 1/3;
     grid-row-start: 1;
   }
+  #parallax-3 {
+    /* The image used */
+    background-image: url("images/track.jpeg");
+  
+    /* Full height */
+    min-height: 800px;
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:contain;
+    border: 1px transparent black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    grid-column: 1/3;
+    grid-row-start: 1;
+    margin-bottom: 40px;
+}
 #why-i-run-content {
     max-width: 1600px;
     margin: 0 auto;
@@ -256,3 +273,35 @@ p {
     grid-row: 3/4;
 }
 
+#resources-footer-grid {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 5px solid #373f51;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: xx-large;
+    background-color: #008dd5;
+    color: #373f51;
+    margin-bottom: 50px;
+    grid-row: 3/4;
+}
+#resources-grid {
+    justify-items: center;
+    display: grid;
+    margin-top: 25px;
+    background-color: #f2b880;
+    color:#373f51;
+    tab-size: 2;
+    padding: 45px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    place-items: center;
+    row-gap: 40px;
+}
+#nikes-pic {
+    text-align: center;
+}
+ul {
+    list-style-type:square;
+  }
