@@ -121,7 +121,7 @@ nav a {
     grid-column: 2/3;
 }
 #resources a:hover, #hero-msg a:hover, #hero-msg-why-i-run a:hover{
-    color: #008dd5;
+    color: #03cea4;
     text-decoration: underline;
 }
 #hero-msg a{
