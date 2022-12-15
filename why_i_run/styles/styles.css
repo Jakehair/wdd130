@@ -77,6 +77,17 @@ nav a {
     z-index: 1;
     font-weight: 900;
 }
+#hero-msg-why-i-run {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 55px;
+    z-index: 1;
+    font-weight: 900;
+    color: #008dd5;
+}
 #first-msg, #second-msg {
     text-align: center;
     padding: 15px;
@@ -109,13 +120,20 @@ nav a {
     padding: 5px;
     grid-column: 2/3;
 }
-#resources a:hover, #hero-msg a:hover{
-    color:#03cea4;
+#resources a:hover, #hero-msg a:hover, #hero-msg-why-i-run a:hover{
+    color: #008dd5;
     text-decoration: underline;
 }
 #hero-msg a{
     text-decoration: none;
-    color: #03cea4;
+    color: #373f51;
+}
+#hero-msg-why-i-run {
+    margin-top: 150px;
+}
+#hero-msg-why-i-run a{
+    text-decoration: none;
+    color: #008dd5;
 }
 #resources a{
     text-decoration: none;
@@ -200,7 +218,7 @@ body, html {
       "img4 img4 img4 img4 img4";
       
     margin-top: 25px;
-    background-color: #008dd5;
+    background-color: #03cea4;
     color:#373f51;
     tab-size: 2;
     padding: 45px;
